@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tylers-super-awesome-fun-mod",
+	"version": "${version}",
+	"name": "Tyler's Super Awesome Fun Mod",
+	"description": "This mod includes everything cool I think should be in Minecraft.",
+	"authors": [
+		"Tyler Hayes"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tylers-super-awesome-fun-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tylersfunmod.TSAFM"
+		],
+		"client": [
+			"tylersfunmod.TSAFMClient"
+		],
+		"fabric-datagen": [
+			"tylersfunmod.TSAFMDataGenerator"
+		]
+	},
+	"mixins": [
+		"tylers-super-awesome-fun-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
