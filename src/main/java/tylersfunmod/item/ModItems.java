@@ -12,10 +12,10 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item DENIM = registerItem("denim", new Item(new FabricItemSettings()));
+    public static final Item Denim = registerItem("denim", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(DENIM);
+        entries.add(Denim);
     }
 
     private static Item registerItem(String name, Item item) {
