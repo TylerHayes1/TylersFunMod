@@ -3,6 +3,7 @@ package tylersfunmod;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import tylersfunmod.block.ModBlocks;
 import tylersfunmod.item.ModItemGroups;
 import tylersfunmod.item.ModItems;
 
@@ -14,5 +15,6 @@ public class TSAFM implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }

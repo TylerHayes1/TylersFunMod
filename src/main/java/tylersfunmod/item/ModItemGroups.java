@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import tylersfunmod.TSAFM;
 import net.minecraft.item.Items;
+import tylersfunmod.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -16,6 +17,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.TSAFM"))
                     .icon(() -> new ItemStack(ModItems.DENIM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DENIM);
+
+                        entries.add(ModBlocks.COTTON_PLANT);
 
 
                     }).build());

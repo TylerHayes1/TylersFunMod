@@ -1,5 +1,9 @@
 {
   "item.tsafm.denim": "Denim",
 
+  "item.tsafm.cotton_seeds": "Cotton Seeds",
+
+  "block.tsafm.cotton_plant": "Cotton Shrub",
+
   "itemgroup.TSAFM": "Tyler's Super Awesome Fun Mod"
 }
