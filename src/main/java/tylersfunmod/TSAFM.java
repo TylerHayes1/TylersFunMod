@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import tylersfunmod.block.ModBlocks;
 import tylersfunmod.item.ModItemGroups;
 import tylersfunmod.item.ModItems;
+import tylersfunmod.util.ModRegistries;
 
 public class TSAFM implements ModInitializer {
 	public static final String MOD_ID = "tsafm";
@@ -16,5 +17,7 @@ public class TSAFM implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+
+		ModRegistries.registerModStuffs();
 	}
 }

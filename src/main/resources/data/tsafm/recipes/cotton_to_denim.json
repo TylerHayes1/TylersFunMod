@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tsafm:cotton_bulb"
+    },
+    {
+      "item": "tsafm:cotton_bulb"
+    },
+    {
+      "item": "tsafm:cotton_bulb"
+    },
+    {
+      "item": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "item": "tsafm:denim"
+  }
+}

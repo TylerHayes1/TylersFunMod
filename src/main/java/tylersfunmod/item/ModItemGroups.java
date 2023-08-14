@@ -17,8 +17,9 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.TSAFM"))
                     .icon(() -> new ItemStack(ModItems.DENIM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DENIM);
-                        entries.add(ModItems.COTTON_BULB);
+                        entries.add(ModItems.JORTS);
 
+                        entries.add(ModItems.COTTON_BULB);
                         entries.add(ModBlocks.COTTON_PLANT);
 
 
