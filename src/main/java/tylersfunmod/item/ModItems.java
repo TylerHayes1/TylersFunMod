@@ -15,11 +15,13 @@ import tylersfunmod.block.ModBlocks;
 
 public class ModItems {
     public static final Item DENIM = registerItem("denim", new Item(new FabricItemSettings()));
+    public static final Item COTTON_BULB = registerItem("cotton_bulb", new Item(new FabricItemSettings()));
 
     public static final Item COTTON_SEEDS = registerItem("cotton_seeds", new AliasedBlockItem(ModBlocks.COTTON_PLANT, new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(DENIM);
+        entries.add(COTTON_BULB);
     }
     private static void addItemsToNaturalItemGroup(FabricItemGroupEntries entries) {
         entries.add(COTTON_SEEDS);
