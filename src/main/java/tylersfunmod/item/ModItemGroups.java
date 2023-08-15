@@ -16,12 +16,12 @@ public class ModItemGroups {
             new Identifier(TSAFM.MOD_ID, "denim"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.TSAFM"))
                     .icon(() -> new ItemStack(ModItems.DENIM)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.DENIM);
-                        entries.add(ModItems.JORTS);
 
                         entries.add(ModBlocks.COTTON_PLANT);
                         entries.add(ModItems.COTTON_BULB);
 
+                        entries.add(ModItems.DENIM);
+                        entries.add(ModItems.JORTS);
 
                     }).build());
     public static void registerItemGroups() {
