@@ -19,8 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DENIM);
                         entries.add(ModItems.JORTS);
 
-                        entries.add(ModItems.COTTON_BULB);
                         entries.add(ModBlocks.COTTON_PLANT);
+                        entries.add(ModItems.COTTON_BULB);
 
 
                     }).build());
