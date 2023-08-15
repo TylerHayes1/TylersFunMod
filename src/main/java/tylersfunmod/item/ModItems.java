@@ -14,10 +14,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import tylersfunmod.block.ModBlocks;
 import tylersfunmod.item.custom.DenimArmorItem;
+import tylersfunmod.item.custom.NetheriteDenimArmorItem;
 
 public class ModItems {
     public static final Item DENIM = registerItem("denim", new Item(new FabricItemSettings()));
     public static final Item JORTS = registerItem("jorts", new DenimArmorItem(ModArmorMaterials.DENIM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item NETHERITEJORTS = registerItem("netherite_jorts", new NetheriteDenimArmorItem(ModArmorMaterials.NETHERITEDENIM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
 
 
     public static final Item COTTON_BULB = registerItem("cotton_bulb", new Item(new FabricItemSettings()));
@@ -35,6 +37,7 @@ public class ModItems {
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
 
         entries.add(JORTS);
+        entries.add(NETHERITEJORTS);
     }
 
     private static Item registerItem(String name, Item item) {

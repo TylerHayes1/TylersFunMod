@@ -22,6 +22,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.DENIM);
                         entries.add(ModItems.JORTS);
+                        entries.add(ModItems.NETHERITEJORTS);
 
                     }).build());
     public static void registerItemGroups() {
