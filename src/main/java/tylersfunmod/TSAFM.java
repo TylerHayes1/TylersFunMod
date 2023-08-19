@@ -10,6 +10,7 @@ import tylersfunmod.entity.custom.CockroachEntity;
 import tylersfunmod.item.ModItemGroups;
 import tylersfunmod.item.ModItems;
 import tylersfunmod.util.ModRegistries;
+import tylersfunmod.world.gen.ModWorldGeneration;
 
 public class TSAFM implements ModInitializer {
 	public static final String MOD_ID = "tsafm";
@@ -20,6 +21,8 @@ public class TSAFM implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		ModRegistries.registerModStuffs();
 
