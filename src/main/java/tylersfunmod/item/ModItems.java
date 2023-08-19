@@ -3,16 +3,13 @@ package tylersfunmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import tylersfunmod.TSAFM;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
 import tylersfunmod.block.ModBlocks;
+import tylersfunmod.entity.ModEntities;
 import tylersfunmod.item.custom.DenimArmorItem;
 import tylersfunmod.item.custom.NetheriteDenimArmorItem;
 
@@ -24,6 +21,10 @@ public class ModItems {
 
     public static final Item COTTON_BULB = registerItem("cotton_bulb", new Item(new FabricItemSettings()));
     public static final Item COTTON_SEEDS = registerItem("cotton_seeds", new AliasedBlockItem(ModBlocks.COTTON_PLANT, new FabricItemSettings()));
+
+    public static final Item COCKROACH_SPAWN_EGG = registerItem("cockroach_spawn_egg",
+            new SpawnEggItem(ModEntities.COCKROACH, 0x3b1e08, 0x6b462a,
+                    new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(DENIM);
@@ -40,6 +41,11 @@ public class ModItems {
         entries.add(NETHERITEJORTS);
     }
 
+    private static void addItemsToSpawnEggItemGroup(FabricItemGroupEntries entries) {
+
+        entries.add(COCKROACH_SPAWN_EGG);
+    }
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TSAFM.MOD_ID, name), item);
     }
@@ -50,5 +56,6 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToNaturalItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItems::addItemsToSpawnEggItemGroup);
     }
 }

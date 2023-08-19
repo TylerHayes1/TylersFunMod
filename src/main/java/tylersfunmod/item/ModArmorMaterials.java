@@ -21,7 +21,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     NETHERITEDENIM("netherite_denim", 37, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
         map.put(ArmorItem.Type.LEGGINGS, 6);
     }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.DENIM});
+        return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT});
     });
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);

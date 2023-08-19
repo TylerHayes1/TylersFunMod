@@ -24,6 +24,8 @@ public class ModItemGroups {
                         entries.add(ModItems.JORTS);
                         entries.add(ModItems.NETHERITEJORTS);
 
+                        entries.add(ModItems.COCKROACH_SPAWN_EGG);
+
                     }).build());
     public static void registerItemGroups() {
         TSAFM.LOGGER.info("Registering Item Groups for " + TSAFM.MOD_ID);
