@@ -8,11 +8,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import tylersfunmod.TSAFM;
-import net.minecraft.item.Items;
 import tylersfunmod.block.ModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup DENIM_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TSAFM.MOD_ID, "denim"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.TSAFM"))
                     .icon(() -> new ItemStack(ModItems.DENIM)).entries((displayContext, entries) -> {
@@ -22,10 +21,11 @@ public class ModItemGroups {
 
                         entries.add(ModItems.DENIM);
                         entries.add(ModItems.JORTS);
-                        entries.add(ModItems.NETHERITEJORTS);
+                        entries.add(ModItems.NETHERITE_JORTS);
 
                         entries.add(ModItems.LOBSTER);
                         entries.add(ModItems.LOBSTER_TAIL);
+                        entries.add(ModBlocks.LOBSTER_TROPHY);
 
                         entries.add(ModItems.COCKROACH_SPAWN_EGG);
 

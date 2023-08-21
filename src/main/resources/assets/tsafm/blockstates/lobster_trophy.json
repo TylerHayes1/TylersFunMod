@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tsafm:block/lobster_trophy"
+    },
+    "facing=south": {
+      "model": "tsafm:block/lobster_trophy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tsafm:block/lobster_trophy",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "tsafm:block/lobster_trophy",
+      "y": 90
+    }
+  }
+}

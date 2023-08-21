@@ -11,11 +11,15 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import tylersfunmod.TSAFM;
 import tylersfunmod.block.custom.CottonBlock;
+import tylersfunmod.block.custom.LobsterTrophyBlock;
 
 public class ModBlocks {
 
     public static final Block COTTON_PLANT = registerBlockWithoutBlockItem("cotton_plant",
             new CottonBlock(FabricBlockSettings.copyOf(Blocks.WHEAT).nonOpaque()));
+
+    public static final Block LOBSTER_TROPHY = registerBlock("lobster_trophy",
+            new LobsterTrophyBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

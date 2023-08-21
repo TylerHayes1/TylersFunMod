@@ -16,8 +16,7 @@ import tylersfunmod.item.custom.NetheriteDenimArmorItem;
 public class ModItems {
     public static final Item DENIM = registerItem("denim", new Item(new FabricItemSettings()));
     public static final Item JORTS = registerItem("jorts", new DenimArmorItem(ModArmorMaterials.DENIM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item NETHERITEJORTS = registerItem("netherite_jorts", new NetheriteDenimArmorItem(ModArmorMaterials.NETHERITEDENIM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-
+    public static final Item NETHERITE_JORTS = registerItem("netherite_jorts", new NetheriteDenimArmorItem(ModArmorMaterials.NETHERITEDENIM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
 
     public static final Item COTTON_BULB = registerItem("cotton_bulb", new Item(new FabricItemSettings()));
     public static final Item COTTON_SEEDS = registerItem("cotton_seeds", new AliasedBlockItem(ModBlocks.COTTON_PLANT, new FabricItemSettings()));
@@ -40,7 +39,7 @@ public class ModItems {
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
         entries.add(JORTS);
-        entries.add(NETHERITEJORTS);
+        entries.add(NETHERITE_JORTS);
     }
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
