@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHERITEJORTS);
 
                         entries.add(ModItems.LOBSTER);
+                        entries.add(ModItems.LOBSTER_TAIL);
 
                         entries.add(ModItems.COCKROACH_SPAWN_EGG);
 

@@ -23,6 +23,7 @@ public class ModItems {
     public static final Item COTTON_SEEDS = registerItem("cotton_seeds", new AliasedBlockItem(ModBlocks.COTTON_PLANT, new FabricItemSettings()));
 
     public static final Item LOBSTER = registerItem("lobster", new Item(new FabricItemSettings()));
+    public static final Item LOBSTER_TAIL = registerItem("lobster_tail", new Item(new FabricItemSettings().food(ModFoodComponents.LOBSTER_TAIL)));
 
     public static final Item COCKROACH_SPAWN_EGG = registerItem("cockroach_spawn_egg",
             new SpawnEggItem(ModEntities.COCKROACH, 0x3b1e08, 0x6b462a,
@@ -31,6 +32,7 @@ public class ModItems {
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(DENIM);
         entries.add(COTTON_BULB);
+        entries.add(LOBSTER);
     }
     private static void addItemsToNaturalItemGroup(FabricItemGroupEntries entries) {
         entries.add(COTTON_SEEDS);
@@ -42,7 +44,7 @@ public class ModItems {
     }
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
-        entries.add(LOBSTER);
+        entries.add(LOBSTER_TAIL);
     }
 
     private static void addItemsToSpawnEggItemGroup(FabricItemGroupEntries entries) {
