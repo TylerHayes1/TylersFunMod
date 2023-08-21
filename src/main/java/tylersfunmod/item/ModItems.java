@@ -22,6 +22,8 @@ public class ModItems {
     public static final Item COTTON_BULB = registerItem("cotton_bulb", new Item(new FabricItemSettings()));
     public static final Item COTTON_SEEDS = registerItem("cotton_seeds", new AliasedBlockItem(ModBlocks.COTTON_PLANT, new FabricItemSettings()));
 
+    public static final Item LOBSTER = registerItem("lobster", new Item(new FabricItemSettings()));
+
     public static final Item COCKROACH_SPAWN_EGG = registerItem("cockroach_spawn_egg",
             new SpawnEggItem(ModEntities.COCKROACH, 0x3b1e08, 0x6b462a,
                     new FabricItemSettings()));
@@ -31,14 +33,16 @@ public class ModItems {
         entries.add(COTTON_BULB);
     }
     private static void addItemsToNaturalItemGroup(FabricItemGroupEntries entries) {
-
         entries.add(COTTON_SEEDS);
     }
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
-
         entries.add(JORTS);
         entries.add(NETHERITEJORTS);
+    }
+
+    private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
+        entries.add(LOBSTER);
     }
 
     private static void addItemsToSpawnEggItemGroup(FabricItemGroupEntries entries) {
@@ -56,6 +60,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToNaturalItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItems::addItemsToSpawnEggItemGroup);
     }
 }
